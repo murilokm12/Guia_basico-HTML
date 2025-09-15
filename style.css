@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background: #f9f9f9;
+  color: #222;
+}
+
+#titulo {
+  text-align: center;
+  color: orangered;
+}
+
+h2 {
+  color: #2563EB;
+  margin-top: 30px;
+}
+
+p {
+  margin: 6px 0;
+}
+
+pre {
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+}
+
+
+.saida{
+  color: green;
+}
+
+hr{
+  border-color: blue;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Guia Básico de HTML5</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+  <section class="hero">
+
+  <h1 id="titulo">
+    <img class="logo" style="margin: 0 40px 0 25px;" src="Logo.png" height="210" width="210">
+    <br>
+    Guia Básico de HTML5
+  </h1>
+
+</section>
+
+<section class="content">
+
+
+  <h2>️Estrutura básica</h2>
+  <p>📌 Todo documento HTML segue essa estrutura:</p>
+  <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    Criação aqui dentro
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+
+  <b>&lt;DOCTYPE html&gt;</b> → diz que o documento é HTML5 📜
+  <br>
+  <b>&lt;html&gt;</b> → raiz de toda a página 🌐
+  <br>
+  <b>&lt;head&gt;</b> → informações do site (título, links, meta) 🧠
+  <br>
+  <b>&lt;body&gt;</b> → tudo que aparece na tela 👀
+  <br>
+  <b>&lt;title&gt;</b> → nome que aparece na aba do navegador 🪪
+
+  <br>
+  <br>
+  <b>&lt;title&gt;</b>Google.com<b>&lt;/title&gt;</b>
+  <h2 class="saida">Saída: </h2>
+  <img
+    src="img1.jpg"
+    height="150" width="310">
+  <br>
+
+
+  <hr>
+
+  <h2>✍️Títulos e parágrafos</h2>
+  <h2 style="color: black;">títulos (do maior para o menor).</h2>
+  <b> 📌 &lt;h1&gt;</b>
+  <br>
+  <b> 📌 &lt;h2&gt;</b>
+  <br>
+  <b> 📌 &lt;h3&gt;</b>
+  <br>
+  <b> 📌 &lt;h4&gt;</b>
+  <br>
+  <b> 📌 &lt;h5&gt;</b>
+  <br>
+  <b> 📌 &lt;h6&gt;</b>
+  <br>
+
+  📌 <b>&lt;p&gt;</b> → parágrafos de texto.</p>
+  <pre><code class="language-html">
+&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+&lt;p&gt;Esse é um parágrafo de exemplo.&lt;/p&gt;
+  </code></pre>
+  <h2 class="saida">Saída:</h2>
+  <h1>Título principal</h1>
+  <h2 style="color: black;">Subtítulo</h2>
+  <p>Esse é um parágrafo de exemplo.</p>
+
+  <hr>
+
+  <b>&lt;strong&gt;</b> → Torna o texto em negrito.
+
+  <br>
+
+  <b>&lt;b&gt;</b> → Tabém torna o texto em negrito.
+
+  <pre><code class="language-html">
+  &lt;p&gt;
+  frase normal, &lt;strong&gt;frase em negrito,&lt;/strong&gt; 
+  
+  &lt;br&gt;
+  
+  &lt;b&gt;frase em negrito com a tag b&lt;/b&gt;
+  
+  &lt;/p&gt;
+  </code></pre>
+  <h2 class="saida">Saída:</h2>
+  <p>frase normal, <strong>frase em negrito</strong>
+  <br>
+    <b>frase em negrito com a tag b</b>
+  </p>
+
+  <hr>
+
+
+  <h2>
+    <img src="coreente.webp" height="25" width="25">
+    Links e 🌄 imagens
+  </h2>
+  <p>📌 <b>&lt;a href=" "&gt;</b> → cria links.
+    <br>
+    📌 <b>&lt;img src=" " alt=" "&gt;</b> → insere imagens.
+  </p>
+  <pre><code class="language-html">
+    
+&lt;a href="https://google.com"&gt;Ir para o Google&lt;/a&gt;
+
+&lt;img src="imagem.png"  width="200"&gt;
+  </code></pre>
+  <h2 class="saida">Saída:</h2>
+  <a href="https://google.com">Ir para o Google</a><br>
+
+
+  <hr>
+
+  <h2>📋Listas</h2>
+  <p>📌 <b>&lt;ul&gt;</b> → lista não ordenada (com marcadores).
+    <br>
+    📌 <b>&lt;ol&gt;</b> → lista ordenada (numerada).
+    <br>
+    📌 <b>&lt;li&gt;</b> → item da lista.
+  </p>
+
+  <h3>Exemplo de lista não ordenada</h3>
+  <pre><code class="language-html">
+&lt;ul&gt;
+  &lt;li&gt;Maçã&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+  </code></pre>
+  <h2 class="saida">Saída:</h2>
+  <ul>
+    <li>Maçã</li>
+    <li>Banana</li>
+  </ul>
+
+  <hr>
+
+  <h3>Exemplo de lista ordenada</h3>
+  <pre><code class="language-html">
+&lt;ol&gt;
+  &lt;li&gt;Primeiro&lt;/li&gt;
+  &lt;li&gt;Segundo&lt;/li&gt;
+&lt;/ol&gt;
+  </code></pre>
+  <h2 class="saida">Saída:</h2>
+  <ol>
+    <li>Primeiro</li>
+    <li>Segundo</li>
+  </ol>
+
+  <hr>
+
+  <h2>Tabelas</h2>
+  <p>📌 <b>&lt;table&gt;</b> → cria uma tabela.
+    <br>
+    📌 <b>&lt;tr&gt;</b> → linha da tabela.
+    <br>
+    📌 <b>&lt;th&gt;</b> → cabeçalho.
+    <br>
+    📌 <b>&lt;td&gt;</b> → célula comum.
+  </p>
+  <pre><code class="language-html">
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nome&lt;/th&gt;
+    &lt;th&gt;Idade&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Maria&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+  </code></pre>
+  <h2 class="saida">Saída:</h2>
+  <table border="1">
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+    <tr>
+      <td>Maria</td>
+      <td>20</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h2>Formulários</h2>
+  <p>📌 <b>&lt;form&gt;</b> → cria formulários.
+    <br>
+    <br>
+    📌 <b>&lt;input&gt;</b> → campos de texto, email, senha etc.
+    <br>
+    <br>
+    📌 <b>&lt;button&gt;</b> → botão.
+  </p>
+  <br>
+  <b> 📌 <b>&lt;input type="text"&gt;</b> → <input type="text">
+    <br>
+    <br>
+    <b> 📌 &lt;input type="password"&gt;</b> → <input type="password">
+    <br>
+    <br>
+    📌 <b>&lt;button type="submit">Enviar&lt;button&gt;</b> → <button type="submit">Enviar</button>
+    <br>
+    <br>
+    📌 <b>&lt;input type="checkbox"&gt;</b> → <input type="checkbox">
+    <br>
+    <br>
+    📌 &lt;input type="radio"&gt; → <input type="radio">
+    <br>
+    <br>
+    📌 &lt;input type="color"&gt; → <input type="color">
+    <br>
+    <br>
+    📌 &lt;input type="hidden"&gt; → <input type="hidden">
+    <br>
+    <br>
+    📌 &lt;input type="email"&gt; → <input type="email">
+    <br>
+    <br>
+    📌 &lt;input type="date"&gt; → <input type="date">
+    <br>
+    <br>
+    📌 &lt;input type="time"&gt; → <input type="time">
+    <br>
+    <br>
+    📌 &lt;input type="file"&gt; → <input type="file">
+    <br>
+    <br>
+    📌 &lt;input type="image"&gt; → <input type="image">
+    <br>
+    <br>
+    📌 &lt;input type="number"&gt; → <input type="number">
+
+
+    <pre><code class="language-html">
+&lt;form&gt;
+  Nome: &lt;input type="text" name="nome"&gt;&lt;br&gt;
+  Email: &lt;input type="email" name="email"&gt;&lt;br&gt;
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+  </code></pre>
+    <h2 class="saida">Saída:</h2>
+    <form>
+      Nome: <input type="text" name="nome"><br>
+      Email: <input type="email" name="email"><br>
+      <button type="submit">Enviar</button>
+
+      <hr>
+
+</section>
+
+
+      <script src="src/exercício1.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-html.js"></script>
+
+</body>
+
+</html>
